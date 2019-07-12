@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang = "en-US">
+<head>
+    <meta charset="uft-8"/>
+    <title>Push button to show other buttons</title>
+</head>
+ 
+<body>
+ 
+<input type="button" value="Search" onclick="show()" />
+<br/>
+<div id="search"  style="display:none"> 
+<ul>
+<button>play</button>
+<button>stop</button>
+<button>pause</button> 
+</ul>
+   
+</div>
+
+
+<script>
+function show() {
+   document.getElementById('search').style.display = "block"
+}
+</script>
+</body>
+
+</html>
